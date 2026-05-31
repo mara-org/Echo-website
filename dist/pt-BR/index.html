@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo | Um lugar tranquilo para suas memórias</title>
+    <link rel="icon" type="image/png" href="/pt-BR/logo.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Soft, welcoming fonts: Outfit for headings, Lora for nostalgic touches -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+
+    <!-- Soft Ambient Background Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <nav class="cozy-nav">
+        <div class="nav-container">
+            <a href="/pt-BR/" class="nav-brand">
+                <img src="../logo.png" alt="Echo" class="nav-logo">
+                <span class="brand-name">Echo</span>
+            </a>
+            <div class="nav-links">
+                <a href="/pt-BR/#about">Nossa História</a>
+                <a href="/pt-BR/#privacy">Seguro e Privado</a>
+                <a href="/pt-BR/support">Suporte</a>
+            </div>
+            <a href="/pt-BR/#join" class="btn-primary nav-btn">Obter o App</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Gentle Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content fade-in-up">
+                <div class="welcome-badge">
+                    <i class="fa-solid fa-sun"></i> Seu ritual matinal
+                </div>
+                <h1 class="hero-title">
+                    Um lugar tranquilo para <br><span class="text-accent">suas memórias.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    O Echo traz gentilmente de volta uma foto esquecida do seu passado todas as manhãs. Sem rolagem infinita, sem pressão social. Apenas um minuto de paz com uma memória que você valoriza.
+                </p>
+                <div class="hero-actions">
+                    <a href="/pt-BR/#join" class="btn-primary btn-large">Comece Seu Ritual</a>
+                    <p class="hero-note"><i class="fa-solid fa-heart"></i> Projetado para iOS 17+</p>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-in-up delay-2">
+                <div class="memory-stack" id="memory-stack">
+                    <div class="memory-card card-3">
+                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cozy Memory">
+                    </div>
+                    <div class="memory-card card-2">
+                        <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7fdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Warm Memory">
+                    </div>
+                    <div class="memory-card card-1 main-card">
+                        <div class="photo-container">
+                            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Today's Memory">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-date">13 de maio de 2021</div>
+                            <div class="card-time-ago">HÁ 3 ANOS</div>
+                        </div>
+                        <div class="click-hint">Clique para ver memórias</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Features (Why Echo is comforting) -->
+        <section class="comfort-features" id="about">
+            <div class="feature-row fade-in-up scroll-trigger">
+                <div class="feature-text">
+                    <h2>Respire, não role a tela.</h2>
+                    <p>Os feeds das redes sociais são barulhentos e avassaladores. O Echo foi projetado para ser exatamente o oposto. Damos a você exatamente uma foto por dia para refletir. Quando você a vê, acabou. Um limite saudável para sua mente.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Relaxing">
+                </div>
+            </div>
+
+            <div class="feature-row reverse fade-in-up scroll-trigger" id="privacy">
+                <div class="feature-text">
+                    <h2>Seu espaço mais seguro.</h2>
+                    <p>Sua vida é privada, e suas fotos também deveriam ser. O Echo funciona totalmente offline. Nunca enviamos suas memórias para a nuvem e não temos servidores. Tudo fica perfeitamente seguro em seu próprio telefone.</p>
+                </div>
+                <div class="feature-image privacy-box">
+                    <div class="privacy-icon"><i class="fa-solid fa-lock"></i></div>
+                    <h3>100% Offline</h3>
+                    <p>Sem rastreamento. Sem contas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warm Pricing & Waitlist -->
+        <section class="join-section fade-in-up scroll-trigger" id="join">
+            <div class="join-container">
+                <img src="../logo.png" alt="Echo Logo" class="join-logo">
+                <h2>Junte-se à família.</h2>
+                <p>O Echo é um espaço premium e sem anúncios. Contamos inteiramente com nossos usuários para manter o aplicativo pacífico e privado.</p>
+                
+                
+                <div class="currency-switcher-container fade-in-up scroll-trigger">
+                    <label for="currency-select"><i class="fa-solid fa-coins"></i></label>
+                    <select id="currency-select">
+                        <!-- Populated by JS -->
+                        <option value="USD" selected>USD ($)</option>
+                    </select>
+                </div>
+
+                <div class="pricing-cards">
+                    <div class="price-box">
+                        <div class="price-title">Suporte Mensal</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="monthly">$1.99</span> <span class="period">/ mês</span></div>
+                        <p>Apoie nosso espaço sem anúncios mensalmente.</p>
+                    </div>
+
+                    <div class="price-box">
+                        <div class="price-title">Apoio Anual</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="yearly">$14.99</span> <span class="period">/ ano</span></div>
+                        <p>A escolha mais popular. Economize mais de 35%.</p>
+                    </div>
+                    <div class="price-box lifetime">
+                        <div class="price-title">Apoiador Vitalício</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="lifetime">$19.99</span> <span class="period">uma vez</span></div>
+                        <p>Pague uma vez, mantenha seu espaço tranquilo para sempre.</p>
+                    </div>
+                </div>
+
+                <div class="download-box">
+                    <h3>Comece sua jornada</h3>
+                    <a href="https://apps.apple.com/us/app/echo-memory-journal/id6775021634" target="_blank" class="app-store-btn">
+                        <i class="fa-brands fa-apple"></i>
+                        <div class="btn-texts">
+                            <span class="small-text">Baixar na</span>
+                            <span class="large-text">App Store</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">Echo &copy; <span id="year"></span></div>
+            <div class="footer-links">
+                <a href="/pt-BR/support">Suporte</a>
+                <a href="/pt-BR/privacy">Política de Privacidade</a>
+                <a href="/pt-BR/privacy-choices">Opções de Privacidade</a>
+                <a href="/pt-BR/accessibility">Acessibilidade</a>
+            </div>
+            
+            <div class="lang-switcher">
+                <i class="fa-solid fa-globe"></i>
+                <select class="language-dropdown">
+                    <option value="/" data-lang="en">English</option>
+                    <option value="/ar/" data-lang="ar">العربية</option>
+                    <option value="/es/" data-lang="es">Español</option>
+                    <option value="/fr/" data-lang="fr">Français</option>
+                    <option value="/ja/" data-lang="ja">日本語</option>
+                    <option value="/" data-lang="pt-BR" selected>Português</option>
+                </select>
+            </div>
+
+            <div class="footer-legal">
+                <p>Mara liltaqniyat alhadithah alraqimiah Company | شركة مرا للتقنيات الحديثة الرقمية</p>
+                <p>Saudi Business Center &bull; D-U-N-S: 986467776</p>
+                <a href="https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1+-+%D9%85%D9%86%D8%B4%D8%A2%D8%AA%E2%80%AD/@24.7675625,46.5777571,17z" target="_blank">Ad Diriyah 13714, Arábia Saudita</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

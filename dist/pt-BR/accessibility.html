@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibilidade | Echo</title>
+    <link rel="icon" type="image/png" href="/pt-BR/logo.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="ambient-glow glow-1"></div>
+    
+    <nav class="cozy-nav">
+        <div class="nav-container">
+            <a href="/pt-BR/" class="nav-brand">
+                <img src="../logo.png" alt="Echo" class="nav-logo">
+                <span class="brand-name">Echo</span>
+            </a>
+            <div class="nav-links">
+                <a href="/pt-BR/#about">Nossa História</a>
+            </div>
+            <a href="/pt-BR/#join" class="btn-primary nav-btn">Obter o App</a>
+        </div>
+    </nav>
+
+    <main class="legal-page">
+        <div class="legal-container">
+            <h1>Acessibilidade</h1>
+            <p class="lead" style="margin-bottom: 2rem;">No Echo, acreditamos que todos merecem um lugar seguro e tranquilo para guardar suas memórias. Criamos nosso aplicativo para suportar totalmente as opções de acessibilidade da Apple.</p>
+            
+            <div class="acc-feature" style="margin-bottom: 1.5rem;">
+                <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-ear-listen" style="margin-right: 8px;"></i>VoiceOver</h3>
+                <p style="color: var(--text-secondary); line-height: 1.6;">Os usuários podem navegar pelo aplicativo usando o VoiceOver. Todos os botões estão rotulados para leitores de tela.</p>
+            </div>
+            
+            <div class="acc-feature" style="margin-bottom: 1.5rem;">
+                <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-microphone" style="margin-right: 8px;"></i>Controle por Voz</h3>
+                <p style="color: var(--text-secondary); line-height: 1.6;">Os usuários podem interagir com o aplicativo usando a voz para tocar e deslizar.</p>
+            </div>
+
+            <div class="acc-feature" style="margin-bottom: 1.5rem;">
+                <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-text-height" style="margin-right: 8px;"></i>Texto Maior</h3>
+                <p style="color: var(--text-secondary); line-height: 1.6;">O Echo suporta o Texto Maior (Dynamic Type). O aplicativo se ajustará ao tamanho da fonte das configurações do seu dispositivo.</p>
+            </div>
+
+            <div class="acc-feature" style="margin-bottom: 1.5rem;">
+                <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-moon" style="margin-right: 8px;"></i>Interface Escura</h3>
+                <p style="color: var(--text-secondary); line-height: 1.6;">O Echo é construído nativamente como uma interface escura para reduzir o cansaço visual e proporcionar uma experiência relaxante.</p>
+            </div>
+
+            <div class="acc-feature" style="margin-bottom: 2.5rem;">
+                <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-shapes" style="margin-right: 8px;"></i>Diferenciar sem usar apenas cor</h3>
+                <p style="color: var(--text-secondary); line-height: 1.6;">Usamos ícones claros e texto, e não apenas cores, para distinguir ações e informações importantes.</p>
+            </div>
+            
+            
+            <div class="acc-feature" style="margin-bottom: 1.5rem;">
+                <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-person-running" style="margin-right: 8px;"></i>Reduzir Movimento</h3>
+                <p style="color: var(--text-secondary); line-height: 1.6;">Respeitamos a configuração "Reduzir Movimento" do iOS, substituindo animações por transições de fade sutis.</p>
+            </div>
+            
+            <div class="acc-feature" style="margin-bottom: 2.5rem;">
+                <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-circle-half-stroke" style="margin-right: 8px;"></i>Contraste Suficiente</h3>
+                <p style="color: var(--text-secondary); line-height: 1.6;">Respeitamos a configuração "Aumentar Contraste" do iOS, tornando nossos fundos totalmente opacos e aumentando o contraste do texto.</p>
+            </div>
+
+            <div class="contact-box" style="margin-top: 3rem;">
+                <i class="fa-solid fa-envelope"></i>
+                <p><strong>Envie um e-mail para support@iammara.com</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">Echo &copy; <span id="year"></span></div>
+            <div class="footer-links">
+                <a href="/pt-BR/support">Suporte</a>
+                <a href="/pt-BR/privacy">Política de Privacidade</a>
+                <a href="/pt-BR/privacy-choices">Opções de Privacidade</a>
+                <a href="/pt-BR/accessibility">Acessibilidade</a>
+            </div>
+            
+            <div class="lang-switcher">
+                <i class="fa-solid fa-globe"></i>
+                <select class="language-dropdown">
+                    <option value="/" data-lang="en">English</option>
+                    <option value="/ar/" data-lang="ar">العربية</option>
+                    <option value="/es/" data-lang="es">Español</option>
+                    <option value="/fr/" data-lang="fr">Français</option>
+                    <option value="/ja/" data-lang="ja">日本語</option>
+                    <option value="/" data-lang="pt-BR" selected>Português</option>
+                </select>
+            </div>
+
+            <div class="footer-legal">
+                <p>Mara liltaqniyat alhadithah alraqimiah Company | شركة مرا للتقنيات الحديثة الرقمية</p>
+                <p>Saudi Business Center &bull; D-U-N-S: 986467776</p>
+                <a href="https://www.google.com/maps/place/.../" target="_blank">Ad Diriyah 13714, Arábia Saudita</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js" defer></script>
+</body>
+</html>

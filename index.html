@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo | A Quiet Place for Memories</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Soft, welcoming fonts: Outfit for headings, Lora for nostalgic touches -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Soft Ambient Background Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <nav class="cozy-nav">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">
+                <img src="logo.png" alt="Echo" class="nav-logo">
+                <span class="brand-name">Echo</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about">Our Story</a>
+                <a href="#privacy">Safe & Private</a>
+            </div>
+            <a href="#join" class="btn-primary nav-btn">Join Waitlist</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Gentle Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content fade-in-up">
+                <div class="welcome-badge">
+                    <i class="fa-solid fa-sun"></i> Your morning ritual
+                </div>
+                <h1 class="hero-title">
+                    A quiet place for <br>
+                    <span class="text-accent">your memories.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Echo gently brings back one forgotten photo from your past every morning. No endless scrolling, no social pressure. Just one peaceful minute with a memory you cherish.
+                </p>
+                <div class="hero-actions">
+                    <a href="#join" class="btn-primary btn-large">Start Your Ritual</a>
+                    <p class="hero-note"><i class="fa-solid fa-heart"></i> Designed for iOS 17+</p>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-in-up delay-2">
+                <div class="memory-stack" id="memory-stack">
+                    <div class="memory-card card-3">
+                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cozy Memory">
+                    </div>
+                    <div class="memory-card card-2">
+                        <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7fdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Warm Memory">
+                    </div>
+                    <div class="memory-card card-1 main-card">
+                        <div class="photo-container">
+                            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Today's Memory">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-date">May 13, 2021</div>
+                            <div class="card-time-ago">3 YEARS AGO</div>
+                        </div>
+                        <div class="click-hint">Click to flip through memories</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Features (Why Echo is comforting) -->
+        <section class="comfort-features" id="about">
+            <div class="feature-row fade-in-up scroll-trigger">
+                <div class="feature-text">
+                    <h2>Breathe, don't scroll.</h2>
+                    <p>Social media feeds are loud and overwhelming. Echo is designed to be the exact opposite. We give you exactly one photo a day to reflect on. Once you've seen it, you're done. A healthy boundary for your mind.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Relaxing">
+                </div>
+            </div>
+
+            <div class="feature-row reverse fade-in-up scroll-trigger" id="privacy">
+                <div class="feature-text">
+                    <h2>Your safest space.</h2>
+                    <p>Your life is private, and your photos should be too. Echo works entirely offline. We never upload your memories to a cloud, and we don't have servers. Everything stays perfectly safe on your own phone.</p>
+                </div>
+                <div class="feature-image privacy-box">
+                    <div class="privacy-icon"><i class="fa-solid fa-lock"></i></div>
+                    <h3>100% Offline</h3>
+                    <p>No tracking. No accounts.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warm Pricing & Waitlist -->
+        <section class="join-section fade-in-up scroll-trigger" id="join">
+            <div class="join-container">
+                <img src="logo.png" alt="Echo Logo" class="join-logo">
+                <h2>Join the family.</h2>
+                <p>Echo is a premium, ad-free space. We rely entirely on our users to keep the app peaceful and private.</p>
+                
+                <div class="pricing-cards">
+                    <div class="price-box">
+                        <div class="price-title">Yearly Support</div>
+                        <div class="price-cost">$14.99 <span class="period">/ year</span></div>
+                        <p>Less than a cup of coffee a month to preserve a lifetime of memories.</p>
+                    </div>
+                    <div class="price-box lifetime">
+                        <div class="price-title">Lifetime Supporter</div>
+                        <div class="price-cost">$19.99 <span class="period">once</span></div>
+                        <p>Pay once, keep your quiet space forever.</p>
+                    </div>
+                </div>
+
+                <div class="waitlist-box">
+                    <h3>Request an invitation</h3>
+                    <form id="waitlist-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" id="submit-btn">
+                            <span class="btn-text">Join Waitlist</span>
+                            <i class="fa-solid fa-spinner fa-spin hidden" id="loading-spinner"></i>
+                        </button>
+                    </form>
+                    <div class="success-message hidden" id="success-message">
+                        <i class="fa-solid fa-envelope-open-text"></i> We've saved a spot for you. See you soon.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">Echo &copy; <span id="year"></span></div>
+            <div class="footer-legal">
+                <p>Mara liltaqniyat alhadithah alraqimiah Company | شركة مرا للتقنيات الحديثة الرقمية</p>
+                <p>Saudi Business Center &bull; D-U-N-S: 986467776</p>
+                <a href="https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1+-+%D9%85%D9%86%D8%B4%D8%A2%D8%AA%E2%80%AD/@24.7675625,46.5777571,17z" target="_blank">Ad Diriyah 13714, Saudi Arabia</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

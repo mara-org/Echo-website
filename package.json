@@ -1,0 +1,8 @@
+{
+  "name": "echo-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for Echo app",
+  "scripts": {
+    "build": "node build.js"
+  }
+}
