@@ -72,5 +72,10 @@
   "age_text": "Echo est conçu pour être un espace sûr et positif pour les utilisateurs de tous âges. C'est pourquoi il est classé comme adapté aux 4 ans et plus (4+).",
   "age_bullet1": "Pas de réseaux sociaux ni de contacts non sollicités.",
   "age_bullet2": "Pas de contenu violent, pour adultes ou inapproprié.",
-  "age_bullet3": "Pas de publicités ou de suivi des données."
+  "age_bullet3": "Pas de publicités ou de suivi des données.",
+  "nav_terms": "Conditions d'utilisation",
+  "terms_title": "Conditions d'utilisation (EULA)",
+  "terms_text": "Echo utilise les conditions d'utilisation standards d'Apple (EULA) pour tous les abonnements et achats intégrés.",
+  "terms_link_text": "Lisez les conditions d'utilisation standards d'Apple (EULA) ici",
+  "terms_desc": "En utilisant Echo, vous acceptez ces conditions standards fournies par Apple pour toutes les applications de l'App Store."
 }

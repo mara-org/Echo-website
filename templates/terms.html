@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Suitability & Rating | Echo</title>
+    <title>{{terms_title}} | Echo</title>
     <link rel="icon" type="image/png" href="/logo.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,44 +20,47 @@
         <div class="nav-container">
             <a href="/" class="nav-brand">
                 <img src="logo.png" alt="Echo" class="nav-logo">
-                <span class="brand-name">Echo</span>
+                <span class="brand-name">{{brand_name}}</span>
             </a>
             <div class="nav-links">
-                <a href="/#about">Our Story</a>
+                <a href="/#about">{{nav_story}}</a>
             </div>
-            <a href="/#join" class="btn-primary nav-btn">Get the App</a>
+            <a href="/#join" class="btn-primary nav-btn">{{nav_join}}</a>
         </div>
     </nav>
 
     <main class="legal-page">
         <div class="legal-container">
-            <h1>Age Suitability & Rating</h1>
-            <p class="lead" style="margin-bottom: 2rem;">Echo is designed to be a safe, positive, and mindful space for users of all ages. Because of this, it is rated as suitable for ages 4 and up (4+).</p>
+            <h1>{{terms_title}}</h1>
+            <p class="lead" style="margin-bottom: 2rem;">{{terms_text}}</p>
+            <p style="margin-bottom: 2rem;">
+                <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" style="color: #6366f1; text-decoration: underline; font-weight: 500;">
+                    {{terms_link_text}}
+                </a>
+            </p>
             
-            <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 1rem;">
-                <li><i class="fa-solid fa-check" style="color: #6366f1; margin-right: 10px; margin-left: 10px;"></i> No Social Networking or unsolicited contact.</li>
-                <li><i class="fa-solid fa-check" style="color: #6366f1; margin-right: 10px; margin-left: 10px;"></i> No violent, mature, or inappropriate content.</li>
-                <li><i class="fa-solid fa-check" style="color: #6366f1; margin-right: 10px; margin-left: 10px;"></i> No advertisements or data tracking.</li>
-            </ul>
+            <p style="opacity: 0.8; font-size: 0.95rem; line-height: 1.6;">
+                {{terms_desc}}
+            </p>
         </div>
     </main>
 
     <footer>
         <div class="footer-content">
-            <div class="footer-brand">Echo &copy; <span id="year"></span></div>
+            <div class="footer-brand">{{brand_name}} &copy; <span id="year"></span></div>
             <div class="footer-links">
-                <a href="/support">Support</a>
-                <a href="/privacy">Privacy Policy</a>
-                <a href="/privacy-choices">Privacy Choices</a>
-                <a href="/terms">Terms of Use</a>
-                <a href="/accessibility">Accessibility</a>
-                <a href="/age-suitability">Age Suitability</a>
+                <a href="/support">{{nav_support}}</a>
+                <a href="/privacy">{{nav_privacy_policy}}</a>
+                <a href="/privacy-choices">{{nav_choices}}</a>
+                <a href="/terms">{{nav_terms}}</a>
+                <a href="/accessibility">{{nav_accessibility}}</a>
+                <a href="/age-suitability">{{nav_age}}</a>
             </div>
             
             <div class="lang-switcher">
                 <i class="fa-solid fa-globe"></i>
                 <select class="language-dropdown">
-                    <option value="/" data-lang="en" selected>English</option>
+                    <option value="/" data-lang="en">English</option>
                     <option value="/ar/" data-lang="ar">العربية</option>
                     <option value="/es/" data-lang="es">Español</option>
                     <option value="/fr/" data-lang="fr">Français</option>
@@ -67,9 +70,9 @@
             </div>
 
             <div class="footer-legal">
-                <p>Mara liltaqniyat alhadithah alraqimiah Company | شركة مرا للتقنيات الحديثة الرقمية</p>
+                <p>{{footer_company}} | شركة مرا للتقنيات الحديثة الرقمية</p>
                 <p>Saudi Business Center &bull; D-U-N-S: 986467776</p>
-                <a href="https://www.google.com/maps/place/24%C2%B046'06.5%22N+46%C2%B045'13.5%22E" target="_blank">Ad Diriyah 13714, Saudi Arabia</a>
+                <a href="https://www.google.com/maps/place/24%C2%B046'06.5%22N+46%C2%B045'13.5%22E" target="_blank">{{footer_address}}</a>
             </div>
         </div>
     </footer>
