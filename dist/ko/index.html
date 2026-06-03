@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo | 추억을 위한 조용한 공간</title>
+    <link rel="icon" type="image/png" href="/ko/logo.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Soft, welcoming fonts: Outfit for headings, Lora for nostalgic touches -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+
+    <!-- Soft Ambient Background Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <nav class="cozy-nav">
+        <div class="nav-container">
+            <a href="/ko/" class="nav-brand">
+                <img src="../logo.png" alt="Echo" class="nav-logo">
+                <span class="brand-name">Echo</span>
+            </a>
+            <div class="nav-links">
+                <a href="/ko/#about">우리의 이야기</a>
+                <a href="/ko/#privacy">안전 및 개인정보 보호</a>
+                <a href="/ko/support">지원</a>
+            </div>
+            <a href="/ko/#join" class="btn-primary nav-btn">앱 다운로드</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Gentle Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content fade-in-up">
+                <div class="welcome-badge">
+                    <i class="fa-solid fa-sun"></i> 당신의 아침 의식
+                </div>
+                <h1 class="hero-title">
+                    당신의 추억을 위한 <br><span class="text-accent">조용한 공간.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    매일 아침, Echo는 잊혀진 과거의 사진 한 장을 부드럽게 가져옵니다. 끝없는 스크롤도, 사회적 압박도 없습니다. 오직 소중한 추억과 함께하는 평온한 1분.
+                </p>
+                <div class="hero-actions">
+                    <a href="/ko/#join" class="btn-primary btn-large">당신의 의식 시작하기</a>
+                    <p class="hero-note"><i class="fa-solid fa-heart"></i> iOS 17+ 전용</p>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-in-up delay-2">
+                <div class="memory-stack" id="memory-stack">
+                    <div class="memory-card card-3">
+                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cozy Memory">
+                    </div>
+                    <div class="memory-card card-2">
+                        <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7fdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Warm Memory">
+                    </div>
+                    <div class="memory-card card-1 main-card">
+                        <div class="photo-container">
+                            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Today's Memory">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-date">2021년 5월 13일</div>
+                            <div class="card-time-ago">3년 전</div>
+                        </div>
+                        <div class="click-hint">클릭하여 추억 넘기기</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Features (Why Echo is comforting) -->
+        <section class="comfort-features" id="about">
+            <div class="feature-row fade-in-up scroll-trigger">
+                <div class="feature-text">
+                    <h2>숨을 쉬세요, 스크롤하지 마세요.</h2>
+                    <p>소셜 미디어 피드는 시끄럽고 압도적입니다. Echo는 정반대로 설계되었습니다. 우리는 하루에 단 한 장의 사진만 제공하여 되돌아보게 합니다. 한 번 보면 그것으로 끝입니다. 마음을 위한 건강한 경계입니다.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Relaxing">
+                </div>
+            </div>
+
+            <div class="feature-row reverse fade-in-up scroll-trigger" id="privacy">
+                <div class="feature-text">
+                    <h2>당신의 가장 안전한 장소.</h2>
+                    <p>당신의 삶은 사적이며, 사진도 그래야 합니다. Echo는 완전히 오프라인으로 작동합니다. 우리는 당신의 추억을 어떠한 클라우드에도 업로드하지 않으며 서버도 없습니다. 모든 것이 휴대전화에 완벽하게 안전하게 보관됩니다.</p>
+                </div>
+                <div class="feature-image privacy-box">
+                    <div class="privacy-icon"><i class="fa-solid fa-lock"></i></div>
+                    <h3>100% 오프라인</h3>
+                    <p>추적 없음. 계정 없음.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warm Pricing & Waitlist -->
+        <section class="join-section fade-in-up scroll-trigger" id="join">
+            <div class="join-container">
+                <img src="../logo.png" alt="Echo Logo" class="join-logo">
+                <h2>우리 가족이 되어주세요.</h2>
+                <p>Echo는 프리미엄 광고 없는 공간입니다. 우리는 앱을 평화롭고 사적으로 유지하기 위해 전적으로 사용자에게 의존합니다.</p>
+                
+                
+                <div class="currency-switcher-container fade-in-up scroll-trigger">
+                    <label for="currency-select"><i class="fa-solid fa-coins"></i></label>
+                    <select id="currency-select">
+                        <!-- Populated by JS -->
+                        <option value="USD" selected>USD ($)</option>
+                    </select>
+                </div>
+
+                <div class="pricing-cards">
+                    <div class="price-box">
+                        <div class="price-title">월간 지원</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="monthly">$1.99</span> <span class="period">/ 월</span></div>
+                        <p>광고 없는 공간을 매월 지원하세요.</p>
+                    </div>
+
+                    <div class="price-box">
+                        <div class="price-title">연간 지원</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="yearly">$14.99</span> <span class="period">/ 년</span></div>
+                        <p>가장 인기 있는 선택. 월간 대비 35% 이상 절약.</p>
+                    </div>
+                    <div class="price-box lifetime">
+                        <div class="price-title">평생 후원자</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="lifetime">$19.99</span> <span class="period">일회성</span></div>
+                        <p>한 번의 결제로, 영원히 당신만의 조용한 공간을 유지하세요.</p>
+                    </div>
+                </div>
+
+                <div class="download-box">
+                    <h3>여정 시작하기</h3>
+                    <a href="https://apps.apple.com/us/app/echo-memory-journal/id6775021634" target="_blank" class="app-store-btn">
+                        <i class="fa-brands fa-apple"></i>
+                        <div class="btn-texts">
+                            <span class="small-text">다운로드</span>
+                            <span class="large-text">App Store</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">Echo &copy; <span id="year"></span></div>
+            <div class="footer-links">
+                <a href="/ko/support">지원</a>
+                <a href="/ko/privacy">개인정보 처리방침</a>
+                <a href="/ko/privacy-choices">개인정보 보호 옵션</a>
+                <a href="/ko/terms">이용 약관</a>
+                <a href="/ko/accessibility">접근성</a>
+                <a href="/ko/age-suitability">연령 등급</a>
+            </div>
+            
+            <div class="lang-switcher">
+                <i class="fa-solid fa-globe"></i>
+                <select class="language-dropdown">
+                    <option value="/" data-lang="en">English</option>
+                    <option value="/ar/" data-lang="ar">العربية</option>
+                    <option value="/es/" data-lang="es">Español</option>
+                    <option value="/fr/" data-lang="fr">Français</option>
+                    <option value="/ja/" data-lang="ja">日本語</option>
+                    <option value="/pt-BR/" data-lang="pt-BR">Português</option>
+                    <option value="/de/" data-lang="de">Deutsch</option>
+                    <option value="/it/" data-lang="it">Italiano</option>
+                    <option value="/zh-Hans/" data-lang="zh-Hans">简体中文</option>
+                    <option value="/" data-lang="ko" selected>한국어</option>
+                </select>
+            </div>
+
+            <div class="footer-legal">
+                <p>Mara liltaqniyat alhadithah alraqimiah Company | شركة مرا للتقنيات الحديثة الرقمية</p>
+                <p>Saudi Business Center &bull; D-U-N-S: 986467776</p>
+                <a href="https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1+-+%D9%85%D9%86%D8%B4%D8%A2%D8%AA%E2%80%AD/@24.7675625,46.5777571,17z" target="_blank">Ad Diriyah 13714, 사우디아라비아</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

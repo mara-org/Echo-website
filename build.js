@@ -62,7 +62,7 @@ Object.keys(locales).forEach(lang => {
             content = content.replace(/href="\/(.*?)"/g, `href="/${lang}/$1"`);
             
             // Re-fix language switcher links if they got messed up by the above regex
-            content = content.replace(new RegExp(`value="/${lang}/(ar|es|fr|ja|pt-BR)/"`, 'g'), 'value="/$1/"');
+            content = content.replace(new RegExp(`value="/${lang}/(ar|es|fr|ja|pt-BR|de|it|zh-Hans|ko)/"`, 'g'), 'value="/$1/"');
             content = content.replace(new RegExp(`value="/${lang}/"`, 'g'), 'value="/"'); // fix en link
             
             content = content.replace(`data-lang="${lang}"`, `data-lang="${lang}" selected`);
