@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo | Egy Csendes Hely az Emlékeknek</title>
+    <link rel="icon" type="image/png" href="/hu/logo.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Soft, welcoming fonts: Outfit for headings, Lora for nostalgic touches -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+
+    <!-- Soft Ambient Background Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <nav class="cozy-nav">
+        <div class="nav-container">
+            <a href="/hu/" class="nav-brand">
+                <img src="../logo.png" alt="Echo" class="nav-logo">
+                <span class="brand-name">Echo</span>
+            </a>
+            <div class="nav-links">
+                <a href="/hu/#about">Történetünk</a>
+                <a href="/hu/#privacy">Biztonságos és Privát</a>
+                <a href="/hu/support">Támogatás</a>
+            </div>
+            <a href="/hu/#join" class="btn-primary nav-btn">Alkalmazás letöltése</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Gentle Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content fade-in-up">
+                <div class="welcome-badge">
+                    <i class="fa-solid fa-sun"></i> A te reggeli rituáléd
+                </div>
+                <h1 class="hero-title">
+                    Egy csendes hely az <br><span class="text-accent">emlékeidnek.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Az Echo minden reggel gyengéden visszahoz egy elfeledett fotót a múltadból. Nincs végtelen görgetés, nincs társadalmi nyomás. Csak egy békés perc egy számodra kedves emlékkel.
+                </p>
+                <div class="hero-actions">
+                    <a href="/hu/#join" class="btn-primary btn-large">Kezdd el a rituáléd</a>
+                    <p class="hero-note"><i class="fa-solid fa-heart"></i> iOS 17+ rendszerre tervezve</p>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-in-up delay-2">
+                <div class="memory-stack" id="memory-stack">
+                    <div class="memory-card card-3">
+                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cozy Memory">
+                    </div>
+                    <div class="memory-card card-2">
+                        <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7fdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Warm Memory">
+                    </div>
+                    <div class="memory-card card-1 main-card">
+                        <div class="photo-container">
+                            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Today's Memory">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-date">2021. május 13.</div>
+                            <div class="card-time-ago">3 ÉVVE EZELŐTT</div>
+                        </div>
+                        <div class="click-hint">Kattints az emlékek lapozásához</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Features (Why Echo is comforting) -->
+        <section class="comfort-features" id="about">
+            <div class="feature-row fade-in-up scroll-trigger">
+                <div class="feature-text">
+                    <h2>Lélegezz, ne görgess.</h2>
+                    <p>A közösségi média hírfolyamai hangosak és elsöprőek. Az Echo-t pont az ellenkezőjére tervezték. Pontosan egy fotót adunk neked naponta, amin elgondolkodhatsz. Amint láttad, végeztél. Egy egészséges határ az elméd számára.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Relaxing">
+                </div>
+            </div>
+
+            <div class="feature-row reverse fade-in-up scroll-trigger" id="privacy">
+                <div class="feature-text">
+                    <h2>A legbiztonságosabb tered.</h2>
+                    <p>Az életed privát, és a fotóidnak is annak kell lenniük. Az Echo teljesen offline működik. Soha nem töltjük fel az emlékeidet a felhőbe, és nincsenek szervereink. Minden tökéletes biztonságban marad a saját telefonodon.</p>
+                </div>
+                <div class="feature-image privacy-box">
+                    <div class="privacy-icon"><i class="fa-solid fa-lock"></i></div>
+                    <h3>100% Offline</h3>
+                    <p>Nincs nyomon követés. Nincsenek fiókok.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warm Pricing & Waitlist -->
+        <section class="join-section fade-in-up scroll-trigger" id="join">
+            <div class="join-container">
+                <img src="../logo.png" alt="Echo Logo" class="join-logo">
+                <h2>Csatlakozz a családhoz.</h2>
+                <p>Az Echo egy prémium, reklámmentes tér. Teljes mértékben a felhasználóinkra támaszkodunk, hogy az alkalmazás békés és privát maradjon.</p>
+                
+                
+                <div class="currency-switcher-container fade-in-up scroll-trigger">
+                    <label for="currency-select"><i class="fa-solid fa-coins"></i></label>
+                    <select id="currency-select">
+                        <!-- Populated by JS -->
+                        <option value="USD" selected>USD ($)</option>
+                    </select>
+                </div>
+
+                <div class="pricing-cards">
+                    <div class="price-box">
+                        <div class="price-title">Havi támogatás</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="monthly">$1.99</span> <span class="period">/ hónap</span></div>
+                        <p>Támogasd a reklámmentes terünket havi rendszerességgel.</p>
+                    </div>
+
+                    <div class="price-box">
+                        <div class="price-title">Éves támogatás</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="yearly">$14.99</span> <span class="period">/ év</span></div>
+                        <p>A legnépszerűbb választás. Takaríts meg több mint 35%-ot a havi díjhoz képest.</p>
+                    </div>
+                    <div class="price-box lifetime">
+                        <div class="price-title">Életre szóló támogató</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="lifetime">$19.99</span> <span class="period">egyszeri</span></div>
+                        <p>Fizess egyszer, tartsd meg a csendes teredet örökre.</p>
+                    </div>
+                </div>
+
+                <div class="download-box">
+                    <h3>Kezdd el az utazásod</h3>
+                    <a href="https://apps.apple.com/us/app/echo-memory-journal/id6775021634" target="_blank" class="app-store-btn">
+                        <i class="fa-brands fa-apple"></i>
+                        <div class="btn-texts">
+                            <span class="small-text">Töltsd le az</span>
+                            <span class="large-text">App Store-ból</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">Echo &copy; <span id="year"></span></div>
+            <div class="footer-links">
+                <a href="/hu/support">Támogatás</a>
+                <a href="/hu/privacy">Adatvédelmi Irányelvek</a>
+                <a href="/hu/privacy-choices">Adatvédelmi Választások</a>
+                <a href="/hu/terms">Használati feltételek</a>
+                <a href="/hu/accessibility">Hozzáférhetőség</a>
+                <a href="/hu/age-suitability">Korhatár</a>
+            </div>
+            
+            <div class="lang-switcher">
+                <i class="fa-solid fa-globe"></i>
+                <select class="language-dropdown">
+                    <option value="/" data-lang="en">English</option>
+                    <option value="/ar/" data-lang="ar">العربية</option>
+                    <option value="/es/" data-lang="es">Español</option>
+                    <option value="/fr/" data-lang="fr">Français</option>
+                    <option value="/ja/" data-lang="ja">日本語</option>
+                    <option value="/pt-BR/" data-lang="pt-BR">Português</option>
+                    <option value="/de/" data-lang="de">Deutsch</option>
+                    <option value="/it/" data-lang="it">Italiano</option>
+                    <option value="/zh-Hans/" data-lang="zh-Hans">简体中文</option>
+                    <option value="/ko/" data-lang="ko">한국어</option>
+                    <option value="/ru/" data-lang="ru">Русский</option>
+                    <option value="/id/" data-lang="id">Bahasa Indonesia</option>
+                    <option value="/tr/" data-lang="tr">Türkçe</option>
+                    <option value="/vi/" data-lang="vi">Tiếng Việt</option>
+                    <option value="/th/" data-lang="th">ไทย</option>
+                    <option value="/hi/" data-lang="hi">हिन्दी</option>
+                    <option value="/nl/" data-lang="nl">Nederlands</option>
+                    <option value="/sv/" data-lang="sv">Svenska</option>
+                    <option value="/pl/" data-lang="pl">Polski</option>
+                    <option value="/zh-Hant/" data-lang="zh-Hant">繁體中文</option>
+                    <option value="/ms/" data-lang="ms">Bahasa Melayu</option>
+                    <option value="/cs/" data-lang="cs">Čeština</option>
+                    <option value="/da/" data-lang="da">Dansk</option>
+                    <option value="/fi/" data-lang="fi">Suomi</option>
+                    <option value="/" data-lang="hu" selected>Magyar</option>
+
+                </select>
+            </div>
+
+            <div class="footer-legal">
+                <p>Mara liltaqniyat alhadithah alraqimiah Company | شركة مرا للتقنيات الحديثة الرقمية</p>
+                <p>Saudi Business Center &bull; D-U-N-S: 986467776</p>
+                <a href="https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1+-+%D9%85%D9%86%D8%B4%D8%A2%D8%AA%E2%80%AD/@24.7675625,46.5777571,17z" target="_blank">Ad Diriyah 13714, Saudi Arabia</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

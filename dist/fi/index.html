@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fi" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo | Hiljainen paikka muistoille</title>
+    <link rel="icon" type="image/png" href="/fi/logo.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Soft, welcoming fonts: Outfit for headings, Lora for nostalgic touches -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+
+    <!-- Soft Ambient Background Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <nav class="cozy-nav">
+        <div class="nav-container">
+            <a href="/fi/" class="nav-brand">
+                <img src="../logo.png" alt="Echo" class="nav-logo">
+                <span class="brand-name">Echo</span>
+            </a>
+            <div class="nav-links">
+                <a href="/fi/#about">Tarinamme</a>
+                <a href="/fi/#privacy">Turvallinen ja yksityinen</a>
+                <a href="/fi/support">Tuki</a>
+            </div>
+            <a href="/fi/#join" class="btn-primary nav-btn">Hanki sovellus</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Gentle Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content fade-in-up">
+                <div class="welcome-badge">
+                    <i class="fa-solid fa-sun"></i> Aamurutiinisi
+                </div>
+                <h1 class="hero-title">
+                    Hiljainen paikka <br><span class="text-accent">muistoillesi.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Echo tuo hellästi takaisin yhden unohdetun kuvan menneisyydestäsi joka aamu. Ei loputonta vierittämistä, ei sosiaalista painetta. Vain yksi rauhallinen minuutti rakkaalla muistolla.
+                </p>
+                <div class="hero-actions">
+                    <a href="/fi/#join" class="btn-primary btn-large">Aloita rutiinisi</a>
+                    <p class="hero-note"><i class="fa-solid fa-heart"></i> Suunniteltu iOS 17+:lle</p>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-in-up delay-2">
+                <div class="memory-stack" id="memory-stack">
+                    <div class="memory-card card-3">
+                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cozy Memory">
+                    </div>
+                    <div class="memory-card card-2">
+                        <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7fdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Warm Memory">
+                    </div>
+                    <div class="memory-card card-1 main-card">
+                        <div class="photo-container">
+                            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Today's Memory">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-date">13. toukokuuta 2021</div>
+                            <div class="card-time-ago">3 VUOTTA SITTEN</div>
+                        </div>
+                        <div class="click-hint">Klikkaa selataksesi muistoja</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Features (Why Echo is comforting) -->
+        <section class="comfort-features" id="about">
+            <div class="feature-row fade-in-up scroll-trigger">
+                <div class="feature-text">
+                    <h2>Hengitä, älä selaa.</h2>
+                    <p>Sosiaalisen median syötteet ovat äänekkäitä ja ylivoimaisia. Echo on suunniteltu olemaan täysin päinvastainen. Annamme sinulle tarkalleen yhden valokuvan päivässä pohtittavaksi. Kun olet nähnyt sen, olet valmis. Terve raja mielellesi.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Relaxing">
+                </div>
+            </div>
+
+            <div class="feature-row reverse fade-in-up scroll-trigger" id="privacy">
+                <div class="feature-text">
+                    <h2>Turvallisin tilasi.</h2>
+                    <p>Elämäsi on yksityistä, ja sinun pitäisi olla myös valokuviesi. Echo toimii täysin offline-tilassa. Emme koskaan lataa muistojasi pilveen, eikä meillä ole palvelimia. Kaikki pysyy täydellisen turvassa omassa puhelimessasi.</p>
+                </div>
+                <div class="feature-image privacy-box">
+                    <div class="privacy-icon"><i class="fa-solid fa-lock"></i></div>
+                    <h3>100% Offline</h3>
+                    <p>Ei seurantaa. Ei tilejä.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warm Pricing & Waitlist -->
+        <section class="join-section fade-in-up scroll-trigger" id="join">
+            <div class="join-container">
+                <img src="../logo.png" alt="Echo Logo" class="join-logo">
+                <h2>Liity perheeseen.</h2>
+                <p>Echo on ensiluokkainen, mainokseton tila. Luotamme täysin käyttäjiimme pitääksemme sovelluksen rauhallisena ja yksityisenä.</p>
+                
+                
+                <div class="currency-switcher-container fade-in-up scroll-trigger">
+                    <label for="currency-select"><i class="fa-solid fa-coins"></i></label>
+                    <select id="currency-select">
+                        <!-- Populated by JS -->
+                        <option value="USD" selected>USD ($)</option>
+                    </select>
+                </div>
+
+                <div class="pricing-cards">
+                    <div class="price-box">
+                        <div class="price-title">Kuukausittainen tuki</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="monthly">$1.99</span> <span class="period">/ kuukausi</span></div>
+                        <p>Tue mainoksetonta tilaamme kuukausittain.</p>
+                    </div>
+
+                    <div class="price-box">
+                        <div class="price-title">Vuotuinen tuki</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="yearly">$14.99</span> <span class="period">/ vuosi</span></div>
+                        <p>Suosituin valinta. Säästä yli 35% kuukausittaiseen verrattuna.</p>
+                    </div>
+                    <div class="price-box lifetime">
+                        <div class="price-title">Elinikäinen tukija</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="lifetime">$19.99</span> <span class="period">kerran</span></div>
+                        <p>Maksa kerran, pidä hiljainen tilasi ikuisesti.</p>
+                    </div>
+                </div>
+
+                <div class="download-box">
+                    <h3>Aloita matkasi</h3>
+                    <a href="https://apps.apple.com/us/app/echo-memory-journal/id6775021634" target="_blank" class="app-store-btn">
+                        <i class="fa-brands fa-apple"></i>
+                        <div class="btn-texts">
+                            <span class="small-text">Lataa</span>
+                            <span class="large-text">App Store</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">Echo &copy; <span id="year"></span></div>
+            <div class="footer-links">
+                <a href="/fi/support">Tuki</a>
+                <a href="/fi/privacy">Tietosuojakäytäntö</a>
+                <a href="/fi/privacy-choices">Tietosuojavalinnat</a>
+                <a href="/fi/terms">Käyttöehdot</a>
+                <a href="/fi/accessibility">Saavutettavuus</a>
+                <a href="/fi/age-suitability">Ikäsoveltuvuus</a>
+            </div>
+            
+            <div class="lang-switcher">
+                <i class="fa-solid fa-globe"></i>
+                <select class="language-dropdown">
+                    <option value="/" data-lang="en">English</option>
+                    <option value="/ar/" data-lang="ar">العربية</option>
+                    <option value="/es/" data-lang="es">Español</option>
+                    <option value="/fr/" data-lang="fr">Français</option>
+                    <option value="/ja/" data-lang="ja">日本語</option>
+                    <option value="/pt-BR/" data-lang="pt-BR">Português</option>
+                    <option value="/de/" data-lang="de">Deutsch</option>
+                    <option value="/it/" data-lang="it">Italiano</option>
+                    <option value="/zh-Hans/" data-lang="zh-Hans">简体中文</option>
+                    <option value="/ko/" data-lang="ko">한국어</option>
+                    <option value="/ru/" data-lang="ru">Русский</option>
+                    <option value="/id/" data-lang="id">Bahasa Indonesia</option>
+                    <option value="/tr/" data-lang="tr">Türkçe</option>
+                    <option value="/vi/" data-lang="vi">Tiếng Việt</option>
+                    <option value="/th/" data-lang="th">ไทย</option>
+                    <option value="/hi/" data-lang="hi">हिन्दी</option>
+                    <option value="/nl/" data-lang="nl">Nederlands</option>
+                    <option value="/sv/" data-lang="sv">Svenska</option>
+                    <option value="/pl/" data-lang="pl">Polski</option>
+                    <option value="/zh-Hant/" data-lang="zh-Hant">繁體中文</option>
+                    <option value="/ms/" data-lang="ms">Bahasa Melayu</option>
+                    <option value="/cs/" data-lang="cs">Čeština</option>
+                    <option value="/da/" data-lang="da">Dansk</option>
+                    <option value="/" data-lang="fi" selected>Suomi</option>
+                    <option value="/hu/" data-lang="hu">Magyar</option>
+
+                </select>
+            </div>
+
+            <div class="footer-legal">
+                <p>Mara liltaqniyat alhadithah alraqimiah Company | شركة مرا للتقنيات الحديثة الرقمية</p>
+                <p>Saudi Business Center &bull; D-U-N-S: 986467776</p>
+                <a href="https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1+-+%D9%85%D9%86%D8%B4%D8%A2%D8%AA%E2%80%AD/@24.7675625,46.5777571,17z" target="_blank">Ad Diriyah 13714, Saudi Arabia</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
