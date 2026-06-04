@@ -188,7 +188,7 @@ document.querySelectorAll('.language-dropdown').forEach(select => {
         let currentPath = window.location.pathname;
         
         // Supported non-default languages
-        const langs = ['ar', 'cs', 'da', 'de', 'es', 'fi', 'fr', 'hi', 'hu', 'id', 'it', 'ja', 'ko', 'ms', 'nl', 'pl', 'pt-BR', 'ru', 'sv', 'th', 'tr', 'vi', 'zh-Hans', 'zh-Hant'];
+        const langs = ['ar', 'cs', 'da', 'de', 'el', 'es', 'fi', 'fr', 'hi', 'hu', 'id', 'it', 'ja', 'ko', 'ms', 'nb', 'nl', 'pl', 'pt-BR', 'ro', 'ru', 'sk', 'sv', 'th', 'tr', 'uk', 'vi', 'zh-Hans', 'zh-Hant'];
         
         // Remove existing lang prefix if present
         for (let l of langs) {

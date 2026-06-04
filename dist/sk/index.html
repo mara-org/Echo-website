@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="sk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo | Pokojné miesto pre spomienky</title>
+    <link rel="icon" type="image/png" href="/sk/logo.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Soft, welcoming fonts: Outfit for headings, Lora for nostalgic touches -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+
+    <!-- Soft Ambient Background Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <nav class="cozy-nav">
+        <div class="nav-container">
+            <a href="/sk/" class="nav-brand">
+                <img src="../logo.png" alt="Echo" class="nav-logo">
+                <span class="brand-name">Echo</span>
+            </a>
+            <div class="nav-links">
+                <a href="/sk/#about">Náš príbeh</a>
+                <a href="/sk/#privacy">Bezpečné a súkromné</a>
+                <a href="/sk/support">Podpora</a>
+            </div>
+            <a href="/sk/#join" class="btn-primary nav-btn">Získať aplikáciu</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Gentle Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content fade-in-up">
+                <div class="welcome-badge">
+                    <i class="fa-solid fa-sun"></i> Vaša ranná rutina
+                </div>
+                <h1 class="hero-title">
+                    Pokojné miesto pre <br><span class="text-accent">vaše spomienky.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Echo vám každé ráno jemne pripomenie jednu zabudnutú fotografiu z vašej minulosti. Žiadne nekonečné posúvanie, žiadny sociálny tlak. Len jedna pokojná minúta so spomienkou, ktorú si ceníte.
+                </p>
+                <div class="hero-actions">
+                    <a href="/sk/#join" class="btn-primary btn-large">Začnite svoju rutinu</a>
+                    <p class="hero-note"><i class="fa-solid fa-heart"></i> Navrhnuté pre iOS 17+</p>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-in-up delay-2">
+                <div class="memory-stack" id="memory-stack">
+                    <div class="memory-card card-3">
+                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cozy Memory">
+                    </div>
+                    <div class="memory-card card-2">
+                        <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7fdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Warm Memory">
+                    </div>
+                    <div class="memory-card card-1 main-card">
+                        <div class="photo-container">
+                            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Today's Memory">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-date">13. mája 2021</div>
+                            <div class="card-time-ago">PRED 3 ROKMI</div>
+                        </div>
+                        <div class="click-hint">Kliknutím listujte spomienkami</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Features (Why Echo is comforting) -->
+        <section class="comfort-features" id="about">
+            <div class="feature-row fade-in-up scroll-trigger">
+                <div class="feature-text">
+                    <h2>Dýchajte, neposúvajte.</h2>
+                    <p>Informačné kanály sociálnych médií sú hlučné a ohromujúce. Echo je navrhnuté tak, aby bolo presným opakom. Dáme vám presne jednu fotku denne na zamyslenie. Keď ju uvidíte, máte hotovo. Zdravá hranica pre vašu myseľ.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Relaxing">
+                </div>
+            </div>
+
+            <div class="feature-row reverse fade-in-up scroll-trigger" id="privacy">
+                <div class="feature-text">
+                    <h2>Váš najbezpečnejší priestor.</h2>
+                    <p>Váš život je súkromný a vaše fotografie by mali byť tiež. Echo funguje úplne offline. Vaše spomienky nikdy nenahrávame do cloudu a nemáme servery. Všetko zostáva úplne v bezpečí na vašom vlastnom telefóne.</p>
+                </div>
+                <div class="feature-image privacy-box">
+                    <div class="privacy-icon"><i class="fa-solid fa-lock"></i></div>
+                    <h3>100% Offline</h3>
+                    <p>Žiadne sledovanie. Žiadne účty.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warm Pricing & Waitlist -->
+        <section class="join-section fade-in-up scroll-trigger" id="join">
+            <div class="join-container">
+                <img src="../logo.png" alt="Echo Logo" class="join-logo">
+                <h2>Pridajte sa do rodiny.</h2>
+                <p>Echo je prémiový priestor bez reklám. Úplne sa spoliehame na našich používateľov, že udržia aplikáciu pokojnú a súkromnú.</p>
+                
+                
+                <div class="currency-switcher-container fade-in-up scroll-trigger">
+                    <label for="currency-select"><i class="fa-solid fa-coins"></i></label>
+                    <select id="currency-select">
+                        <!-- Populated by JS -->
+                        <option value="USD" selected>USD ($)</option>
+                    </select>
+                </div>
+
+                <div class="pricing-cards">
+                    <div class="price-box">
+                        <div class="price-title">Mesačná podpora</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="monthly">$1.99</span> <span class="period">/ mesiac</span></div>
+                        <p>Podporte náš priestor bez reklám na mesačnej báze.</p>
+                    </div>
+
+                    <div class="price-box">
+                        <div class="price-title">Ročná podpora</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="yearly">$14.99</span> <span class="period">/ rok</span></div>
+                        <p>Najobľúbenejšia voľba. Ušetrite viac ako 35% v porovnaní s mesačným predplatným.</p>
+                    </div>
+                    <div class="price-box lifetime">
+                        <div class="price-title">Celoživotný podporovateľ</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="lifetime">$19.99</span> <span class="period">jednorazovo</span></div>
+                        <p>Zaplaťte raz, ponechajte si svoj pokojný priestor navždy.</p>
+                    </div>
+                </div>
+
+                <div class="download-box">
+                    <h3>Začnite svoju cestu</h3>
+                    <a href="https://apps.apple.com/us/app/echo-memory-journal/id6775021634" target="_blank" class="app-store-btn">
+                        <i class="fa-brands fa-apple"></i>
+                        <div class="btn-texts">
+                            <span class="small-text">Stiahnuť v</span>
+                            <span class="large-text">App Store</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">Echo &copy; <span id="year"></span></div>
+            <div class="footer-links">
+                <a href="/sk/support">Podpora</a>
+                <a href="/sk/privacy">Zásady ochrany osobných údajov</a>
+                <a href="/sk/privacy-choices">Možnosti súkromia</a>
+                <a href="/sk/terms">Podmienky použitia</a>
+                <a href="/sk/accessibility">Prístupnosť</a>
+                <a href="/sk/age-suitability">Veková vhodnosť</a>
+            </div>
+            
+            <div class="lang-switcher">
+                <i class="fa-solid fa-globe"></i>
+                <select class="language-dropdown">
+                    <option value="/" data-lang="en">English</option>
+                    <option value="/ar/" data-lang="ar">العربية</option>
+                    <option value="/es/" data-lang="es">Español</option>
+                    <option value="/fr/" data-lang="fr">Français</option>
+                    <option value="/ja/" data-lang="ja">日本語</option>
+                    <option value="/pt-BR/" data-lang="pt-BR">Português</option>
+                    <option value="/de/" data-lang="de">Deutsch</option>
+                    <option value="/it/" data-lang="it">Italiano</option>
+                    <option value="/zh-Hans/" data-lang="zh-Hans">简体中文</option>
+                    <option value="/ko/" data-lang="ko">한국어</option>
+                    <option value="/ru/" data-lang="ru">Русский</option>
+                    <option value="/id/" data-lang="id">Bahasa Indonesia</option>
+                    <option value="/tr/" data-lang="tr">Türkçe</option>
+                    <option value="/vi/" data-lang="vi">Tiếng Việt</option>
+                    <option value="/th/" data-lang="th">ไทย</option>
+                    <option value="/hi/" data-lang="hi">हिन्दी</option>
+                    <option value="/nl/" data-lang="nl">Nederlands</option>
+                    <option value="/sv/" data-lang="sv">Svenska</option>
+                    <option value="/pl/" data-lang="pl">Polski</option>
+                    <option value="/zh-Hant/" data-lang="zh-Hant">繁體中文</option>
+                    <option value="/ms/" data-lang="ms">Bahasa Melayu</option>
+                    <option value="/cs/" data-lang="cs">Čeština</option>
+                    <option value="/da/" data-lang="da">Dansk</option>
+                    <option value="/fi/" data-lang="fi">Suomi</option>
+                    <option value="/hu/" data-lang="hu">Magyar</option>
+                    <option value="/el/" data-lang="el">Ελληνικά</option>
+                    <option value="/ro/" data-lang="ro">Română</option>
+                    <option value="/uk/" data-lang="uk">Українська</option>
+                    <option value="/nb/" data-lang="nb">Norsk Bokmål</option>
+                    <option value="/" data-lang="sk" selected>Slovenčina</option>
+
+
+                </select>
+            </div>
+
+            <div class="footer-legal">
+                <p>Mara liltaqniyat alhadithah alraqimiah Company | شركة مرا للتقنيات الحديثة الرقمية</p>
+                <p>Saudi Business Center &bull; D-U-N-S: 986467776</p>
+                <a href="https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1+-+%D9%85%D9%86%D8%B4%D8%A2%D8%AA%E2%80%AD/@24.7675625,46.5777571,17z" target="_blank">Ad Diriyah 13714, Saudi Arabia</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

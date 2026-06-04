@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo | Тихе місце для спогадів</title>
+    <link rel="icon" type="image/png" href="/uk/logo.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Soft, welcoming fonts: Outfit for headings, Lora for nostalgic touches -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+
+    <!-- Soft Ambient Background Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <nav class="cozy-nav">
+        <div class="nav-container">
+            <a href="/uk/" class="nav-brand">
+                <img src="../logo.png" alt="Echo" class="nav-logo">
+                <span class="brand-name">Echo</span>
+            </a>
+            <div class="nav-links">
+                <a href="/uk/#about">Наша історія</a>
+                <a href="/uk/#privacy">Безпечно та приватно</a>
+                <a href="/uk/support">Підтримка</a>
+            </div>
+            <a href="/uk/#join" class="btn-primary nav-btn">Отримати додаток</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Gentle Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content fade-in-up">
+                <div class="welcome-badge">
+                    <i class="fa-solid fa-sun"></i> Ваша ранкова рутина
+                </div>
+                <h1 class="hero-title">
+                    Тихе місце для <br><span class="text-accent">ваших спогадів.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Echo щоранку ніжно повертає забуту фотографію з вашого минулого. Жодних нескінченних гортань, жодного соціального тиску. Лише одна мирна хвилина з цінним спогадом.
+                </p>
+                <div class="hero-actions">
+                    <a href="/uk/#join" class="btn-primary btn-large">Почати рутину</a>
+                    <p class="hero-note"><i class="fa-solid fa-heart"></i> Створено для iOS 17+</p>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-in-up delay-2">
+                <div class="memory-stack" id="memory-stack">
+                    <div class="memory-card card-3">
+                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cozy Memory">
+                    </div>
+                    <div class="memory-card card-2">
+                        <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7fdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Warm Memory">
+                    </div>
+                    <div class="memory-card card-1 main-card">
+                        <div class="photo-container">
+                            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Today's Memory">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-date">13 травня 2021 р.</div>
+                            <div class="card-time-ago">3 РОКИ ТОМУ</div>
+                        </div>
+                        <div class="click-hint">Натисніть, щоб переглянути спогади</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Features (Why Echo is comforting) -->
+        <section class="comfort-features" id="about">
+            <div class="feature-row fade-in-up scroll-trigger">
+                <div class="feature-text">
+                    <h2>Дихайте, а не гортайте.</h2>
+                    <p>Стрічки соціальних мереж галасливі та перевантажують. Echo створено як повна протилежність. Ми даємо вам рівно одне фото на день для роздумів. Щойно ви його побачите — все, на сьогодні досить. Здорова межа для вашого розуму.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Relaxing">
+                </div>
+            </div>
+
+            <div class="feature-row reverse fade-in-up scroll-trigger" id="privacy">
+                <div class="feature-text">
+                    <h2>Ваш найбезпечніший простір.</h2>
+                    <p>Ваше життя приватне, як і ваші фотографії. Echo працює повністю офлайн. Ми ніколи не завантажуємо ваші спогади в хмару, і у нас немає серверів. Все залишається ідеально безпечним на вашому власному телефоні.</p>
+                </div>
+                <div class="feature-image privacy-box">
+                    <div class="privacy-icon"><i class="fa-solid fa-lock"></i></div>
+                    <h3>100% Офлайн</h3>
+                    <p>Без відстеження. Без облікових записів.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warm Pricing & Waitlist -->
+        <section class="join-section fade-in-up scroll-trigger" id="join">
+            <div class="join-container">
+                <img src="../logo.png" alt="Echo Logo" class="join-logo">
+                <h2>Приєднуйтесь до сім'ї.</h2>
+                <p>Echo — це преміальний простір без реклами. Ми повністю покладаємось на наших користувачів, щоб додаток залишався мирним та приватним.</p>
+                
+                
+                <div class="currency-switcher-container fade-in-up scroll-trigger">
+                    <label for="currency-select"><i class="fa-solid fa-coins"></i></label>
+                    <select id="currency-select">
+                        <!-- Populated by JS -->
+                        <option value="USD" selected>USD ($)</option>
+                    </select>
+                </div>
+
+                <div class="pricing-cards">
+                    <div class="price-box">
+                        <div class="price-title">Щомісячна підтримка</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="monthly">$1.99</span> <span class="period">/ місяць</span></div>
+                        <p>Підтримуйте наш простір без реклами щомісяця.</p>
+                    </div>
+
+                    <div class="price-box">
+                        <div class="price-title">Річна підтримка</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="yearly">$14.99</span> <span class="period">/ рік</span></div>
+                        <p>Найпопулярніший вибір. Заощаджуйте понад 35% порівняно з щомісячною платою.</p>
+                    </div>
+                    <div class="price-box lifetime">
+                        <div class="price-title">Довічний прихильник</div>
+                        <div class="price-cost"><span class="dynamic-price" data-tier="lifetime">$19.99</span> <span class="period">одноразово</span></div>
+                        <p>Заплатіть один раз, збережіть свій тихий простір назавжди.</p>
+                    </div>
+                </div>
+
+                <div class="download-box">
+                    <h3>Почніть свою подорож</h3>
+                    <a href="https://apps.apple.com/us/app/echo-memory-journal/id6775021634" target="_blank" class="app-store-btn">
+                        <i class="fa-brands fa-apple"></i>
+                        <div class="btn-texts">
+                            <span class="small-text">Завантажити в</span>
+                            <span class="large-text">App Store</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">Echo &copy; <span id="year"></span></div>
+            <div class="footer-links">
+                <a href="/uk/support">Підтримка</a>
+                <a href="/uk/privacy">Політика конфіденційності</a>
+                <a href="/uk/privacy-choices">Налаштування конфіденційності</a>
+                <a href="/uk/terms">Умови використання</a>
+                <a href="/uk/accessibility">Спеціальні можливості</a>
+                <a href="/uk/age-suitability">Вікові обмеження</a>
+            </div>
+            
+            <div class="lang-switcher">
+                <i class="fa-solid fa-globe"></i>
+                <select class="language-dropdown">
+                    <option value="/" data-lang="en">English</option>
+                    <option value="/ar/" data-lang="ar">العربية</option>
+                    <option value="/es/" data-lang="es">Español</option>
+                    <option value="/fr/" data-lang="fr">Français</option>
+                    <option value="/ja/" data-lang="ja">日本語</option>
+                    <option value="/pt-BR/" data-lang="pt-BR">Português</option>
+                    <option value="/de/" data-lang="de">Deutsch</option>
+                    <option value="/it/" data-lang="it">Italiano</option>
+                    <option value="/zh-Hans/" data-lang="zh-Hans">简体中文</option>
+                    <option value="/ko/" data-lang="ko">한국어</option>
+                    <option value="/ru/" data-lang="ru">Русский</option>
+                    <option value="/id/" data-lang="id">Bahasa Indonesia</option>
+                    <option value="/tr/" data-lang="tr">Türkçe</option>
+                    <option value="/vi/" data-lang="vi">Tiếng Việt</option>
+                    <option value="/th/" data-lang="th">ไทย</option>
+                    <option value="/hi/" data-lang="hi">हिन्दी</option>
+                    <option value="/nl/" data-lang="nl">Nederlands</option>
+                    <option value="/sv/" data-lang="sv">Svenska</option>
+                    <option value="/pl/" data-lang="pl">Polski</option>
+                    <option value="/zh-Hant/" data-lang="zh-Hant">繁體中文</option>
+                    <option value="/ms/" data-lang="ms">Bahasa Melayu</option>
+                    <option value="/cs/" data-lang="cs">Čeština</option>
+                    <option value="/da/" data-lang="da">Dansk</option>
+                    <option value="/fi/" data-lang="fi">Suomi</option>
+                    <option value="/hu/" data-lang="hu">Magyar</option>
+                    <option value="/el/" data-lang="el">Ελληνικά</option>
+                    <option value="/ro/" data-lang="ro">Română</option>
+                    <option value="/" data-lang="uk" selected>Українська</option>
+                    <option value="/nb/" data-lang="nb">Norsk Bokmål</option>
+                    <option value="/sk/" data-lang="sk">Slovenčina</option>
+
+
+                </select>
+            </div>
+
+            <div class="footer-legal">
+                <p>Mara liltaqniyat alhadithah alraqimiah Company | شركة مرا للتقنيات الحديثة الرقمية</p>
+                <p>Saudi Business Center &bull; D-U-N-S: 986467776</p>
+                <a href="https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1+-+%D9%85%D9%86%D8%B4%D8%A2%D8%AA%E2%80%AD/@24.7675625,46.5777571,17z" target="_blank">Ad Diriyah 13714, Saudi Arabia</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
