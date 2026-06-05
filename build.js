@@ -41,8 +41,9 @@ Object.keys(locales).forEach(lang => {
     templates.forEach(templateFile => {
         let content = fs.readFileSync(path.join(templatesDir, templateFile), 'utf8');
         
-        // Handle RTL for Arabic
-        const dir = lang === 'ar' ? 'rtl' : 'ltr';
+        // Handle RTL for Arabic and other RTL languages
+        const rtlLangs = ['ar', 'he', 'fa', 'ur'];
+        const dir = rtlLangs.includes(lang) ? 'rtl' : 'ltr';
         content = content.replace('<html lang="en">', `<html lang="${lang}" dir="${dir}">`);
         
         // Replace translation keys
